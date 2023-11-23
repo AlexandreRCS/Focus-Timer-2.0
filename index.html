@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script type="module" src="./scr/script.js" defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -16,10 +18,25 @@
                     <span>00</span>
                 </div>
                 <div id="contorls">
-                    <button>play</button>
-                    <button>stop</button>
-                    <button>timerUp</button>
-                    <button>timerdown</button>
+                    <button>
+                        <i class="ph ph-play-circle"></i>
+                        <span class="sr-only">Iniciar contador</span>
+                    </button>
+
+                    <button>
+                        <i class="ph ph-stop-circle"></i>
+                        <span class="sr-only">Para contador</span>
+                    </button>
+
+                    <button>
+                        <i class="ph ph-plus-circle"></i>
+                        <span class="sr-only">Aumentar em mais 5 minutos o tempo do conatador</span>
+                    </button>
+
+                    <button>
+                        <i class="ph ph-x-circle"></i>
+                        <span class="sr-only">Diminuir em 5 minutos o tempo do contador</span>
+                    </button>
                 </div>
             </section>
             <section>
