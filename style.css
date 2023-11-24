@@ -9,5 +9,7 @@
 
 :root{
     --color-bg:hsla(0, 0%, 100%, 1);
-    --color-bg-select:;
+    --color-bg-select:hsla(194, 97%, 31%, 1);
+    --color-bg-no-select:hsla(240, 9%, 89%, 1);
+    --color-font:hsla(240, 6%, 21%, 1);
 }
