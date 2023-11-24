@@ -33,10 +33,15 @@ body{
 }
 
 #app{
+    height: 100vh;
     background-color: var(--color-bg);
+    display: grid;
+    
 }
 
 #app main{
+    margin-top: -10rem;
     display: flex;
-
+    gap: 19.2rem;
+    place-self: center;
 }
