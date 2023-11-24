@@ -18,6 +18,7 @@
 
 body{
     font-size: 1.6rem;
+    font-family:'Roboto', sans-serif;;
 }
 
 .sr-only{
@@ -61,4 +62,14 @@ button{
     font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
+}
+
+.sec-timer i{
+    font-size: 4.8rem;
+    color:var(--color-font);
+}
+
+#controls{
+    display: flex;
+    gap: 4rem;
 }
