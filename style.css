@@ -39,9 +39,26 @@ body{
     
 }
 
+button{
+    border: none;
+    background: none;
+}
 #app main{
     margin-top: -10rem;
     display: flex;
     gap: 19.2rem;
     place-self: center;
+}
+
+.sec-timer{
+    text-align: center;
+}
+
+.sec-timer span{
+    color: var(--color-font);
+    font-size: 12.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
 }
