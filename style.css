@@ -14,6 +14,7 @@
     --color-bg-select:hsla(194, 97%, 31%, 1);
     --color-bg-no-select:hsla(240, 9%, 89%, 1);
     --color-font:hsla(240, 6%, 21%, 1);
+    --color-font-select:#FFF;
 }
 
 body{
@@ -85,13 +86,19 @@ button{
 .sec-sounds button{ 
     width: 13.2rem;
     height: 15.2rem;
-    background-color: var(--color-bg-no-select);
     border-radius: 2.6rem;
     
-
+    background-color: var(--color-bg-no-select);
+    color: var(--color-font);
+    
 }
 
 .sec-sounds i{
     font-size: 5.6rem;
+}
+
+#toggle-select{
+    background-color: var(--color-bg-select);
+    color: var(--color-font-select);
 }
 
