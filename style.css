@@ -6,3 +6,8 @@
     -webkit-font-smoothings:antialiased;
     -moz-font-smoothings:grayscale;
 }
+
+:root{
+    --color-bg:hsla(0, 0%, 100%, 1);
+    --color-bg-select:;
+}
