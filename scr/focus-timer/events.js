@@ -1,8 +1,13 @@
 import * as ele from "./elements.js"
+import * as actions from "./action.js"
 
 
-export function toggleRunning (){
+export function controls(){
     ele.controls.addEventListener('click', (event)=>{
-    console.log(event.target.dataset.action)
+    const action = event.target.dataset.action
+    if(actions[action]=== !'function'){
+        return
+    }
+    actions[action]()
 })
 }
