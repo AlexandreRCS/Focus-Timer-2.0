@@ -10,8 +10,13 @@ export function stop(){
 }
 
 export function plus(){
-    let timerON = Number(ele.minutes.textContent)
-    ele.minutes.textContent = timerON + state.plus
-    timerON = 0
+    let timerOn = Number(ele.minutes.textContent)
+    ele.minutes.textContent = timerOn + state.plus
+    timerOn = 0
 }
 
+export function minus(){
+    let timerOn = Number(ele.minutes.textContent)
+    ele.minutes.textContent = timerOn + state.minus
+    timerOn = 0
+}
