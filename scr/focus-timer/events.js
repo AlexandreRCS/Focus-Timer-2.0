@@ -1,5 +1,6 @@
 import * as ele from "./elements.js"
 import * as actions from "./action.js"
+import {pressButton} from "./soundsControls.js"
 
 
 export function controls(){
@@ -9,5 +10,6 @@ export function controls(){
         return
     }
     actions[action]()
+    pressButton.play()
 })
 }

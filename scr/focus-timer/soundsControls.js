@@ -1,1 +1,1 @@
-export const
+export const pressButton = new Audio('./assets/button-press.wav')
