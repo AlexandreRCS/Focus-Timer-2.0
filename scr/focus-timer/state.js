@@ -5,4 +5,5 @@ export default{
     isStop:false,
     plus: 5,
     minus: -5,
+    timerCount: null
 }
