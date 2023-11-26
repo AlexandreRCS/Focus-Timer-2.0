@@ -4,7 +4,7 @@ import * as timer from "./timer.js"
 
 export function stop(){
     if(state.isRunning){
-        ele.minutes.textContent = "01"
+        ele.minutes.textContent = "00"
         ele.seconds.textContent = "00"
 
     }
