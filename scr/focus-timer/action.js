@@ -3,11 +3,8 @@ import state from "./state.js"
 import * as timer from "./timer.js"
 
 export function stop(){
-    if(state.isRunning){
-        ele.minutes.textContent = "00"
-        ele.seconds.textContent = "00"
-
-    }
+    ele.minutes.textContent = "00"
+    ele.seconds.textContent = "00"
 
     return
 }
@@ -31,5 +28,12 @@ export function minus(){
 }
 
 export function play(){
-    timer.countDown()
+    let minutes = Number(ele.minutes.textContent)
+    if(minutes > 0){
+        state.isRunning = true
+        timer.countDown()
+    }else{
+        return
+    }
+    
 }

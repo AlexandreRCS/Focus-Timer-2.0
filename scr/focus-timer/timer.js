@@ -1,24 +1,20 @@
 import state from "./state.js";
 import * as ele from "./elements.js"
 import { kichenTimer } from "./soundsControls.js";
+import { stop } from "./action.js";
 
 
 export function updateScreen(minutes, seconds){
-
-    clearTimeout(state.timerCount)
-    
-    if(!state.isRunning){
-        return
-    }
-    
-    minutes = minutes ?? state.minutes
-    seconds = seconds ?? state.seconds
 
     ele.minutes.textContent = String(minutes).padStart(2, "0")
     ele.seconds.textContent = String(seconds).padStart(2, "0")
 }
 
 export function countDown(){
+    clearTimeout(state.timerCount)
+    if(!state.isRunning){
+        return
+    }
     let minutes = Number(ele.minutes.textContent)
     let seconds = Number(ele.seconds.textContent)
 
@@ -35,6 +31,7 @@ export function countDown(){
 
     if(minutes < 0){
         kichenTimer.play()
+        state.isRunning = false
         return
     }
 
@@ -42,3 +39,5 @@ export function countDown(){
 
     state.timerCount =  setTimeout(()=> countDown(), 1000)
 }
+
+console.log(state.isRunning)
