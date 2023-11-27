@@ -90,11 +90,9 @@ button{
     
     background-color: var(--color-bg-no-select);
     color: var(--color-font);
-    
-}
 
-.sec-sounds i{
     font-size: 5.6rem;
+    
 }
 
 #toggle-select{
