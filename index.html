@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>FocusTimer-2.0</title>
     <script type="module" src="./scr/focus-timer/index.js" defer></script>
+    <script type="module" src="./scr//senario-music/main.js" defer></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -42,31 +43,24 @@
                     </button>
                 </div>
             </section>
-            <section class="sec-sounds">
-                <div class="card">
-                    <button id="toggle-select">
-                        <i class="ph ph-tree" ></i>
+            <section class="senario-music">
+
+                    <button id="toggle-select" class="ph ph-tree" data-atribute="tree">
                         <span class="sr-only">Ativar musica de fundo floresta</span>
                     </button>
-                </div>
-                <div class="card">
-                    <button>
-                        <i class="ph ph-cloud-snow"></i>
+
+                    <button class="ph ph-cloud-snow" data-atribute="cloudSnow"> 
                         <span class="sr-only">Ativar musica de fundo chuva</span>
                     </button>
-                </div>
-                <div class="card">
-                    <button>
-                        <i class="ph ph-storefront"></i>
+
+                    <button class="ph ph-storefront" data-atribute="storeFront">
                         <span class="sr-only">Ativar musica de fundo cafeteria</span>
                     </button>
-                </div>
-                <div class="card">
-                    <button>
-                        <i class="ph ph-campfire"></i>
+
+                    <button class="ph ph-campfire" data-atribute="campfire">
                         <span class="sr-only">Ativar musica de fundo laleira</span>
                     </button>
-                </div>
+
             </section>
         </main>
     </div>
