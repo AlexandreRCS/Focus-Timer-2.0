@@ -76,14 +76,14 @@ button{
     gap: 4rem;
 }
 
-.sec-sounds{
+.senario-music{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 3.2rem;
 }
 
-.sec-sounds button{ 
+.senario-music button{ 
     width: 13.2rem;
     height: 15.2rem;
     border-radius: 2.6rem;

@@ -39,5 +39,3 @@ export function countDown(){
 
     state.timerCount =  setTimeout(()=> countDown(), 1000)
 }
-
-console.log(state.isRunning)

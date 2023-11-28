@@ -1,0 +1,1 @@
+export const senarioMusic = document.querySelector('.senario-music')
