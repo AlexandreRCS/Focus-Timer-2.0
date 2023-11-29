@@ -6,6 +6,5 @@ export function removerSelect(){
         element.removeAttribute('id')
     });
 
-    
-    
 }
+

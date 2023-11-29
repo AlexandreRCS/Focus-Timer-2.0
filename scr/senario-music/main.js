@@ -3,7 +3,7 @@ import * as action from "./action-senario.js"
 
 function senarioControls(){
     senarioMusic.addEventListener('click', (event)=>{
-      action.toggleSelect()
+       
     })
 }
 
