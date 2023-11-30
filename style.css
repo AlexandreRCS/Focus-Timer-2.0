@@ -92,7 +92,7 @@ button{
     color: var(--color-font);
 
     font-size: 5.6rem;
-    
+    cursor: pointer;
 }
 
 #toggle-select{
