@@ -29,6 +29,7 @@ export function countDown(){
     }
 
     if(minutes < 0){
+
         kichenTimer.play()
         state.isRunning = false
         return
