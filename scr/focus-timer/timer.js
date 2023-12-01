@@ -1,7 +1,6 @@
 import state from "./state.js";
 import * as ele from "./elements.js"
 import { kichenTimer } from "./soundsControls.js";
-import { stop } from "./action.js";
 
 
 export function updateScreen(minutes, seconds){
