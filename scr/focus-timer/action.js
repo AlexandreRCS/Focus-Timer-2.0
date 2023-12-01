@@ -31,6 +31,7 @@ export function play(){
     let minutes = Number(ele.minutes.textContent)
     if(minutes > 0){
         state.isRunning = true
+        state.isStop = false
         timer.countDown()
     }else{
         return

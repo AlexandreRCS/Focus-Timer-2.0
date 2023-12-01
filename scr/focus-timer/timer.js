@@ -1,6 +1,8 @@
 import state from "./state.js";
 import * as ele from "./elements.js"
 import { kichenTimer } from "./soundsControls.js";
+import { resetSenario } from "../senario-music/action-senario.js";
+
 
 
 export function updateScreen(minutes, seconds){
@@ -29,9 +31,9 @@ export function countDown(){
     }
 
     if(minutes < 0){
-
         kichenTimer.play()
         state.isRunning = false
+        resetSenario()
         return
     }
 

@@ -1,6 +1,8 @@
 import { senarioMusic } from "./elements-senario.js";
 import * as eventSenario from "./events-senario.js"
 import * as sounds from "./sounds-senario.js"
+import  * as runn from "./stateTimer.js"
+import  * as  ele from "../focus-timer/elements.js"
 
 
 export function toggleSelect(){
@@ -12,15 +14,26 @@ export function toggleSelect(){
             eventSenario.removerSelect()
             eventSenario.musicPlay(music)
             sounds.senario.musicOn = music
-            event.target.setAttribute('id', 'toggle-select')
-            
+            runn.runStop(music)
+            if(runn.isrunn){
+                event.target.setAttribute('id', 'toggle-select')
+                
+            }else{
+                return
+            } 
         }else{
             return
         }
-
-       
     })
-
 }
+
+export function resetSenario(){
+    eventSenario.removerSelect()
+    console.log()
+
+    eventSenario.musicStop(sounds.senario.musicOn)
+    
+}
+
 
 
