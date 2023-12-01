@@ -10,8 +10,16 @@ export function removerSelect(){
 }
 
 export function musicStop(musi){
-    if(senario.musicOn){
+    if(musi != ""){
         senario[musi].pause()
-        senario.musicOn = false
+    }else{
+        return
     }
+}
+
+
+export function musicPlay(evento){
+    senario[evento].loop = true
+    senario[evento].play()
+    senario.musicOn = true
 }
