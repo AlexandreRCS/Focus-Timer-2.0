@@ -24,3 +24,4 @@ export function musicPlay(evento){
     senario[evento].play()
     senario.musicOn = true
 }
+

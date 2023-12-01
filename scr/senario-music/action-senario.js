@@ -17,7 +17,7 @@ export function toggleSelect(){
             runn.runStop(music)
             if(runn.isrunn){
                 event.target.setAttribute('id', 'toggle-select')
-                
+
             }else{
                 return
             } 
@@ -29,10 +29,6 @@ export function toggleSelect(){
 
 export function resetSenario(){
     eventSenario.removerSelect()
-    console.log()
-
-    eventSenario.musicStop(sounds.senario.musicOn)
-    
 }
 
 
