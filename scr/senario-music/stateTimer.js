@@ -10,9 +10,12 @@ export function runStop(event){
     if( minutes == 0 && seconds == 0 ){
         isrunn = false
         evenstSenario.removerSelect()
+        console.log(event)
         musicStop(event)
     }else{
         isrunn = true
         return
     }
 }
+
+
