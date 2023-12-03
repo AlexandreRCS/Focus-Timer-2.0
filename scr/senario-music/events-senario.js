@@ -1,6 +1,7 @@
 import * as ele from "./elements-senario.js"
 import { senario } from "./sounds-senario.js";
 import state from "../focus-timer/state.js";
+import * as eles from "../focus-timer/elements.js"
 
 export function removerSelect(){
     let btn = ele.btnSenario

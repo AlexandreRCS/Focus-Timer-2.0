@@ -2,8 +2,7 @@ import { senarioMusic } from "./elements-senario.js";
 import * as eventSenario from "./events-senario.js"
 import * as sounds from "./sounds-senario.js"
 import  * as runn from "./stateTimer.js"
-import  * as  ele from "./elements-senario.js"
-import { senarioControls } from "./main.js";
+
 
 
 export function toggleSelect(){
@@ -29,7 +28,9 @@ export function toggleSelect(){
 
 export function resetSenario(){
     eventSenario.removerSelect()
-     
+    const reset = document.querySelector('.ph-tree')
+    reset.click()
+
 }
 
 
